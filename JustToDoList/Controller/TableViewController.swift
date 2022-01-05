@@ -26,7 +26,7 @@ class TableViewController: UITableViewController {
         let deleteAction = UIAlertAction(title: "Cansel", style: .destructive) { (alert) in
         }
         
-        let createAction = UIAlertAction(title: "Create", style: .default) { (alert) in
+        let createAction = UIAlertAction(title: "Create", style: .cancel) { (alert) in
             // add new Task
             let newItem = alertController.textFields![0].text
             addItem(nameItem: newItem!)
